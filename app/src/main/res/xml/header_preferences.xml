@@ -1,0 +1,16 @@
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- SOS: this is the top menu of settings. Each of the two submenus here makes SettingsActivity
+    load the fragment specified by their app:fragment -->
+    <Preference
+        app:fragment="com.fundamentals.droidcafe.SettingsActivity$MessagesFragment"
+        app:icon="@drawable/messages"
+        app:key="messages_header"
+        app:title="@string/messages_header" />
+
+    <Preference
+        app:fragment="com.fundamentals.droidcafe.SettingsActivity$SyncFragment"
+        app:icon="@drawable/sync"
+        app:key="sync_header"
+        app:title="@string/sync_header" />
+</androidx.preference.PreferenceScreen>
